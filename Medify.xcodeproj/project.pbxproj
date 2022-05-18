@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A28183C2834F18E0029FFA2 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28183B2834F18E0029FFA2 /* UserListCell.swift */; };
+		2A28183E283526CF0029FFA2 /* UserLoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28183D283526CF0029FFA2 /* UserLoginPageView.swift */; };
+		2A281842283527350029FFA2 /* AdminLoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A281841283527350029FFA2 /* AdminLoginPageView.swift */; };
+		2A2818452835275A0029FFA2 /* StaffLoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2818442835275A0029FFA2 /* StaffLoginPageView.swift */; };
 		A3FEC0C628343670002CC045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FEC0C528343670002CC045 /* AppDelegate.swift */; };
 		A3FEC0C828343670002CC045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FEC0C728343670002CC045 /* SceneDelegate.swift */; };
 		A3FEC0CA28343670002CC045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FEC0C928343670002CC045 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A28183B2834F18E0029FFA2 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		2A28183D283526CF0029FFA2 /* UserLoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginPageView.swift; sourceTree = "<group>"; };
+		2A281841283527350029FFA2 /* AdminLoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginPageView.swift; sourceTree = "<group>"; };
+		2A2818442835275A0029FFA2 /* StaffLoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLoginPageView.swift; sourceTree = "<group>"; };
 		A3FEC0C228343670002CC045 /* Medify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FEC0C528343670002CC045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FEC0C728343670002CC045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A28183F283526DA0029FFA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEC0CB28343670002CC045 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A281840283526E60029FFA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEC0C928343670002CC045 /* ViewController.swift */,
+				2A28183B2834F18E0029FFA2 /* UserListCell.swift */,
+				2A28183D283526CF0029FFA2 /* UserLoginPageView.swift */,
+				2A281841283527350029FFA2 /* AdminLoginPageView.swift */,
+				2A2818442835275A0029FFA2 /* StaffLoginPageView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A281846283527730029FFA2 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEC0D028343671002CC045 /* LaunchScreen.storyboard */,
+				A3FEC0C728343670002CC045 /* SceneDelegate.swift */,
+				A3FEC0C528343670002CC045 /* AppDelegate.swift */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		2A2818472835278C0029FFA2 /* Other Support */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEC0CE28343671002CC045 /* Assets.xcassets */,
+				A3FEC0D328343671002CC045 /* Info.plist */,
+			);
+			path = "Other Support";
+			sourceTree = "<group>";
+		};
 		A3FEC0B928343670002CC045 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +103,10 @@
 		A3FEC0C428343670002CC045 /* Medify */ = {
 			isa = PBXGroup;
 			children = (
-				A3FEC0C528343670002CC045 /* AppDelegate.swift */,
-				A3FEC0C728343670002CC045 /* SceneDelegate.swift */,
-				A3FEC0C928343670002CC045 /* ViewController.swift */,
-				A3FEC0CB28343670002CC045 /* Main.storyboard */,
-				A3FEC0CE28343671002CC045 /* Assets.xcassets */,
-				A3FEC0D028343671002CC045 /* LaunchScreen.storyboard */,
-				A3FEC0D328343671002CC045 /* Info.plist */,
+				2A281846283527730029FFA2 /* Launch Screen */,
+				2A28183F283526DA0029FFA2 /* View */,
+				2A281840283526E60029FFA2 /* Controller */,
+				2A2818472835278C0029FFA2 /* Other Support */,
 			);
 			path = Medify;
 			sourceTree = "<group>";
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2818452835275A0029FFA2 /* StaffLoginPageView.swift in Sources */,
+				2A28183E283526CF0029FFA2 /* UserLoginPageView.swift in Sources */,
+				2A28183C2834F18E0029FFA2 /* UserListCell.swift in Sources */,
 				A3FEC0CA28343670002CC045 /* ViewController.swift in Sources */,
 				A3FEC0C628343670002CC045 /* AppDelegate.swift in Sources */,
 				A3FEC0C828343670002CC045 /* SceneDelegate.swift in Sources */,
+				2A281842283527350029FFA2 /* AdminLoginPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
